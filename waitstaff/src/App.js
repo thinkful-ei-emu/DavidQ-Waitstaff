@@ -52,7 +52,22 @@ submitForm = (formData)=>{
         <Charges info={{subTotal:this.state.lastMeal.subTotal, tip:this.state.lastMeal.tip}}/>
         <Earnings info={{total:this.state.earnings.total,count:this.state.earnings.count}}/>
         </div>
-        <button className="box" type="button">Reset</button>
+        <button onClick={(e)=>{
+          e.preventDefault();
+          this.setState({
+                  lastMeal:{
+                  price:0,
+                  tax:0,
+                  tipPercent:0,
+                  subTotal:0,
+                  tip : 0
+                },
+                earnings:{
+                  total:0.00,
+                  count:0
+    }});
+  }
+} className="box" type="button">Reset</button>
         
         
         
