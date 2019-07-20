@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  margin:20px;
+}
+
+
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-content: center;
+  row-gap: 2%;
+  column-gap: 2%;
+}
+.col-half{
+  grid-column: span 2;
+}
+.col-full{
+  grid-column:span 4;
+}
+.col-center{
+  grid-column: 2/span 2
+}
